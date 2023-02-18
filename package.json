@@ -1,0 +1,18 @@
+{
+
+  "homepage": "https://Abhishek-Jadhav-AJ.github.io/todo-app",
+  "name": "to-do-app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "react-scripts start",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build", 
+    "build": "if-env TYPE=server && (cd server && npm install) || (cd client && npm install)",
+    "server": "node ./server/server.js",
+    "client": "cd client && npm start "
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
